@@ -2,10 +2,10 @@ import express from "express";
 import cors from "cors";
 import { getallfiles, getProfileById } from "./Controlls/profilescontrolls.js";
 
-const port = 5000;
 const app = express();
+const port = 5000;
 
-app.use(cors({origin: ['https://frondendprofilemanagement.vercel.app/']}));
+app.use(cors({ origin: ['https://frondendprofilemanagement.vercel.app/'] }));
 app.use(express.json());
 
 app.get("/", getallfiles);
