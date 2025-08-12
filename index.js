@@ -5,7 +5,7 @@ import { getallfiles, getProfileById } from "./Controlls/profilescontrolls.js";
 const port = 5000;
 const app = express();
 
-app.use(cors({origin: "*"}));
+app.use(cors({origin: ['https://frondendprofilemanagement.vercel.app/']}));
 app.use(express.json());
 
 app.get("/", getallfiles);
